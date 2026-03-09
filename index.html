@@ -2,41 +2,145 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
-    <title>Intro Cancas 2D</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Canvas 2D • Graficación</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
 
-    <main class="container flex-column mt-3 shadow rounded-3 p-3">
-        <div class="d-flex justify-content-center flex-row mb-3">
-            <h1>Objetos 2D mediante OOP</h1>
-        </div>
-        <div class="d-flex flex-row shadow-sm mb-1 p-3 justify-content-around">
-            <div class="d-flex justify-content-center flex-column mb-3">
-                <h5 class="d-flex justify-content-center">Objeto 2D</h5>
-                <canvas class="border shadow" id="canvasOOP"></canvas>
-            </div>
-            <div class="d-flex justify-content-center flex-column mb-3">
-                <h5 class="d-flex justify-content-center">Objeto con Random</h5>
-                <canvas class="border shadow" id="canvasRandom"></canvas>
-            </div>
-            <div class="d-flex justify-content-center flex-column mb-3">
-                <h5 class="d-flex justify-content-center">Múltiples objetos</h5>
-                <canvas class="border shadow" id="canvasMultiple"></canvas>
-            </div>
-        </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+<div class="container">
 
-    </main>
+<span class="navbar-brand fw-semibold">
+Canvas 2D Demo
+</span>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="./assets/js/main.js"></script>
+<span class="navbar-text small">
+Programación Orientada a Objetos
+</span>
+
+</div>
+</nav>
+
+
+<!-- HERO -->
+<header class="hero text-center">
+
+<div class="container">
+
+<h1 class="display-6 fw-bold mb-2">
+Visualización de Objetos 2D
+</h1>
+
+<p class="lead text-muted">
+Implementación de objetos gráficos mediante Canvas API y
+Programación Orientada a Objetos en JavaScript.
+</p>
+
+</div>
+
+</header>
+
+
+<!-- CONTENIDO -->
+<main class="container pb-5">
+
+<div class="row g-4 justify-content-center">
+
+<!-- Canvas OOP -->
+<div class="col-12 col-md-6 col-lg-4">
+
+<div class="canvas-card">
+
+<h6 class="canvas-title">
+Objeto 2D
+</h6>
+
+<canvas id="canvasOOP"></canvas>
+
+<p class="canvas-desc">
+Representación de un objeto gráfico definido mediante clase.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Canvas Random -->
+<div class="col-12 col-md-6 col-lg-4">
+
+<div class="canvas-card">
+
+<h6 class="canvas-title">
+Objeto Aleatorio
+</h6>
+
+<canvas id="canvasRandom"></canvas>
+
+<p class="canvas-desc">
+Posición y tamaño generados de forma aleatoria.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Canvas Multiple -->
+<div class="col-12 col-lg-4">
+
+<div class="canvas-card">
+
+<h6 class="canvas-title">
+Múltiples Objetos
+</h6>
+
+<canvas id="canvasMultiple"></canvas>
+
+<p class="canvas-desc">
+Generación dinámica de múltiples objetos gráficos.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div class="container text-center">
+
+<p class="mb-1 fw-semibold">
+Jesús Nicolás Vite
+</p>
+
+<p class="small text-muted mb-0">
+Materia: Graficación • Ingeniería en Sistemas Computacionales
+</p>
+
+</div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/js/main.js"></script>
+
 </body>
-
 </html>

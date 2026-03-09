@@ -1,0 +1,101 @@
+/* Fondo general */
+
+body{
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+}
+
+
+/* Navbar Glass */
+
+.navbar-custom{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+
+/* Card Glass */
+
+.canvas-card{
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius:16px;
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    padding:25px;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.2);
+
+    transition: all .3s ease;
+}
+
+
+/* Hover elegante */
+
+.canvas-card:hover{
+
+    transform: translateY(-6px);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.25);
+
+}
+
+
+/* Canvas */
+
+canvas{
+
+    width:100%;
+    max-width:320px;
+
+    border-radius:10px;
+
+    border:1px solid rgba(255,255,255,0.3);
+
+}
+
+
+/* Texto */
+
+.canvas-title{
+
+    font-weight:600;
+    color:white;
+
+}
+
+.canvas-desc{
+
+    font-size:14px;
+    color:rgba(255,255,255,0.8);
+
+}
+
+
+/* Footer glass */
+
+.footer{
+
+    margin-top:40px;
+
+    background: rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(10px);
+
+    border-top:1px solid rgba(255,255,255,0.2);
+
+    color:white;
+
+    padding:20px 0;
+}
